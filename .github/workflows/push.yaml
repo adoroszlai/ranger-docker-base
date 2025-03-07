@@ -30,7 +30,7 @@ jobs:
     uses: ./.github/workflows/build-and-tag.yaml
     strategy:
       matrix:
-        java: [ 11 ]
+        java: [ 8, 11, 17 ]
       fail-fast: false
     with:
       java-version: ${{ matrix.java }}
